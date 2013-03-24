@@ -1,10 +1,6 @@
-(use '[clojure.contrib.math :only (sqrt)])
-
-(defn factors
-	[n]
-	(range 1 n))
+(use	'[clojure.math.numeric-tower]
+		'[clojure.contrib.lazy-seqs])
 
 (defn solution-3
 	[n]
-	(println n))
-
+	(last (filter #(zero? (rem n %)) (take-while (partial > (sqrt n)) primes))))
