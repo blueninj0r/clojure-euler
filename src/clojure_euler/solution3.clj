@@ -1,5 +1,5 @@
-(use	'[clojure.math.numeric-tower]
-		'[clojure.contrib.lazy-seqs])
+(use 	'[clojure.math.numeric-tower]
+	'[clojure.contrib.lazy-seqs])
 
 (defn solution-3
 	[n]
