@@ -8,7 +8,7 @@
 	[a b]
 	(/ (* a b) (gcd a b)))
 
-(defn solution5
+(defn solution-5
 	[n]
 	(if (= n 2)
 		(lcm 1 2)
