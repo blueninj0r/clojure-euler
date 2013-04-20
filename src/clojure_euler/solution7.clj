@@ -1,4 +1,5 @@
-(use '[clojure.math.numeric-tower])
+(use '[clojure.math.numeric-tower]
+	 '[clojure.contrib.lazy-seqs])
 
 (defn fermat-rand-int
 	[n]
@@ -26,5 +27,5 @@
 
 (defn solution-7
 	[n]
-	(take n (lazy-primes (iterate inc 2))))
+	(last (take n primes)))
 
